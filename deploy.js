@@ -3,10 +3,10 @@ const Web3 = require('web3');
 const { interface, bytecode } = require("./compile");
 
 cont ACCOUNT_MNEMONIC = '';
-const INFURA_URL = '';
+const INFURA_NODE = '';
 const provider = new HDWalletProvider(
     ACCOUNT_MNEMONIC,
-    INFURA_URL
+    INFURA_NODE
 );
 
 const web3 = new Web3(provider);
